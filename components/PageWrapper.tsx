@@ -7,6 +7,8 @@ import AssessmentTool from '@/components/AssessmentTool'
 // AboutSection removed - replaced with Observ520Section
 import TeamSection from '@/components/TeamSection'
 import PremiumTreatments from '@/components/PremiumTreatments'
+import HowItWorksSection from '@/components/HowItWorksSection'
+import WhyChooseUsSection from '@/components/WhyChooseUsSection'
 import ResultsGallery from '@/components/ResultsGallery'
 import ProcessSection from '@/components/ProcessSection'
 import Observ520Section from '@/components/Observ520Section'
@@ -29,7 +31,9 @@ export default function PageWrapper() {
           onAssessmentComplete={(data) => setAssessmentData(data)}
         />
         <Observ520Section onBookingClick={() => setIsBookingModalOpen(true)} />
+        <HowItWorksSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <TeamSection onBookingClick={() => setIsBookingModalOpen(true)} />
+        <WhyChooseUsSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <PremiumTreatments onBookingClick={() => setIsBookingModalOpen(true)} />
         <ProcessSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <ResultsGallery onBookingClick={() => setIsBookingModalOpen(true)} />

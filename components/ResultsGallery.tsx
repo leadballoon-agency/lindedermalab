@@ -11,27 +11,27 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
 
   const results = [
     {
-      image: '/images/beforeafter1.jpg',
-      title: 'CO2 Transformation',
-      description: 'Remarkable skin improvement',
-      time: 'Results Vary'
+      image: '/images/beneath-the-skin.png',
+      title: 'Deep Skin Analysis',
+      description: 'Observ520 reveals underlying conditions',
+      time: 'Consultation'
     },
     {
-      image: '/images/beforeafter2.jpg',
-      title: 'Skin Rejuvenation',  
-      description: 'Visible texture refinement',
-      time: 'Results Vary'
+      image: '/images/girl-with-freckles.png',
+      title: 'Precision Treatment',  
+      description: 'Targeted CO2 laser therapy',
+      time: 'Treatment'
     },
     {
-      image: '/images/beforeafter3.jpg',
-      title: 'Complete Renewal',
-      description: 'Dramatic skin transformation',
-      time: 'Results Vary'
+      image: '/images/team4.jpg',
+      title: 'Expert Care',
+      description: 'Professional consultation & treatment',
+      time: 'Full Journey'
     },
     {
-      image: '/images/beforeafter4.jpg',
-      title: 'Resurfacing Results',
-      description: 'Professional CO2 treatment',
+      image: '/images/bg-about.jpg',
+      title: 'Advanced Technology',
+      description: 'State-of-the-art CO2 laser system',
       time: 'Results Vary'
     }
   ]
@@ -40,13 +40,13 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
     <section id="results" className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-primary-50 to-white">
       <div className="max-w-7xl mx-auto section-padding">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Real Results</span>
+          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Treatment Journey</span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-2 sm:mt-4">
-            Transformations That
-            <span className="block gradient-text">Speak For Themselves</span>
+            Your Path to
+            <span className="block gradient-text">Radiant Skin</span>
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mt-2 sm:mt-4 max-w-2xl mx-auto px-4">
-            Browse our gallery of real patient results
+            Experience our comprehensive approach to skin transformation
           </p>
         </div>
 
@@ -58,20 +58,13 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
               className="group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-premium sm:hover:shadow-premium-lg transition-all duration-300 cursor-pointer"
               onClick={() => setSelectedImage(index)}
             >
-              {/* Before/After Label */}
-              <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-10 flex gap-1.5 sm:gap-2">
-                <span className="bg-white/90 backdrop-blur px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
-                  Before
-                </span>
+              {/* Treatment Stage Label */}
+              <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-10">
                 <span className="bg-primary-500/90 backdrop-blur text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
-                  After
+                  {result.time}
                 </span>
               </div>
 
-              {/* Time Badge */}
-              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 z-10 bg-white/90 backdrop-blur rounded-full px-2 sm:px-3 py-0.5 sm:py-1">
-                <span className="text-[10px] sm:text-xs font-medium text-neutral-700">{result.time}</span>
-              </div>
 
               {/* Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[16/9] overflow-hidden">
@@ -105,7 +98,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         <div className="mt-8 sm:mt-12">
           <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium">
             <img 
-              src="/images/treatment.jpg" 
+              src="/images/beneath-the-skin.png" 
               alt="CO2 Laser Treatment Process" 
               className="w-full"
             />
