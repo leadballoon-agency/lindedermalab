@@ -23,7 +23,7 @@ export default function WhyChooseUsSection({ onBookingClick }: WhyChooseUsSectio
             <div className="text-4xl mb-4">🏆</div>
             <h3 className="text-xl font-bold mb-3">Expert-Led Excellence</h3>
             <p className="text-neutral-600 leading-relaxed">
-              Clients consistently say "Tatiana is very knowledgeable and excellent at what she does." 
+              Clients consistently say "The team is very knowledgeable and excellent at what they do." 
               Our expert-led clinic means you get professional, clinical expertise that other practitioners 
               simply can't deliver.
             </p>
@@ -54,7 +54,7 @@ export default function WhyChooseUsSection({ onBookingClick }: WhyChooseUsSectio
             <div className="text-4xl mb-4">💬</div>
             <h3 className="text-xl font-bold mb-3">You'll Know Everything</h3>
             <p className="text-neutral-600 leading-relaxed">
-              "Tatiana always makes sure you know exactly what's happening and talks you through your treatment." 
+              "The team always makes sure you know exactly what's happening and talks you through your treatment." 
               No confusion, no surprises—just clear, caring communication.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function WhyChooseUsSection({ onBookingClick }: WhyChooseUsSectio
             <h3 className="text-xl font-bold mb-3">Clients Return Again & Again</h3>
             <p className="text-neutral-600 leading-relaxed">
               "I've had many treatments with her" - clients don't just come once, they build relationships 
-              with Tatiana and the team because the results and experience are exceptional.
+              with the Linde DermaLab team because the results and experience are exceptional.
             </p>
           </div>
 

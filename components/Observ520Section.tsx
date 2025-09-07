@@ -18,13 +18,12 @@ export default function Observ520Section({ onBookingClick }: Observ520SectionPro
           {/* Image placeholder - will be replaced when image is added */}
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="aspect-[4/3] relative">
+              <div className="aspect-[4/3] relative bg-gradient-to-br from-primary-50 to-white">
                 <img 
                   src="/images/girl-with-freckles.png" 
                   alt="Observ520 Skin Analysis - Revealing skin conditions beneath the surface"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </div>
           </div>

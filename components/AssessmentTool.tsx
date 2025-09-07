@@ -80,9 +80,9 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
       }
     } else if (assessmentAnswers[1] === 'wrinkles' && assessmentAnswers[2] === 'eyes') {
       return {
-        treatment: 'Eye Area Treatment',
-        price: '£150',
-        description: "Targeted treatment for crow's feet and under-eye concerns"
+        treatment: 'Full Face Treatment',
+        price: '£300',
+        description: 'Complete facial rejuvenation including eye area'
       }
     } else {
       return {

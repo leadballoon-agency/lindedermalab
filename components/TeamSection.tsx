@@ -12,7 +12,7 @@ export default function TeamSection({ onBookingClick }: TeamSectionProps) {
           <span className="block gradient-text">Treatment Team</span>
         </h2>
         <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mt-2 sm:mt-4 max-w-2xl mx-auto px-4">
-          Expert care from Tatiana and the entire Linde DermaLab team
+          Expert care from the entire Linde DermaLab team
         </p>
       </div>
 
@@ -24,7 +24,7 @@ export default function TeamSection({ onBookingClick }: TeamSectionProps) {
             <div className="aspect-[4/3] lg:aspect-auto relative">
               <img 
                 src="/images/team4.jpg" 
-                alt="Tatiana - Expert in Anti-Ageing & Skin Health"
+                alt="Linde DermaLab Team - Experts in Anti-Ageing & Skin Health"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r"></div>
@@ -34,7 +34,7 @@ export default function TeamSection({ onBookingClick }: TeamSectionProps) {
             <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
               <div className="mb-6">
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">
-                  Tatiana
+                  Linde DermaLab Team
                 </h3>
                 <p className="text-lg sm:text-xl text-primary-600 font-medium">
                   Expert in Anti-Ageing & Skin Health
