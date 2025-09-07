@@ -26,7 +26,7 @@ export default function HowItWorksSection({ onBookingClick }: HowItWorksSectionP
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4">Precision Targeting</h3>
               <p className="text-neutral-600 leading-relaxed">
-                Unlike traditional lasers, our fractional CO₂ laser creates tiny, precise treatment zones while 
+                Our Lumenis UltraPulse® fractional CO₂ laser creates tiny, precise treatment zones while 
                 leaving surrounding tissue intact. This means faster healing and reduced downtime while still 
                 achieving dramatic results.
               </p>

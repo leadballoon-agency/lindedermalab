@@ -9,6 +9,7 @@ import TeamSection from '@/components/TeamSection'
 import PremiumTreatments from '@/components/PremiumTreatments'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import WhyChooseUsSection from '@/components/WhyChooseUsSection'
+import UltraPulseSection from '@/components/UltraPulseSection'
 import ResultsGallery from '@/components/ResultsGallery'
 import ProcessSection from '@/components/ProcessSection'
 import Observ520Section from '@/components/Observ520Section'
@@ -31,6 +32,7 @@ export default function PageWrapper() {
           onAssessmentComplete={(data) => setAssessmentData(data)}
         />
         <Observ520Section onBookingClick={() => setIsBookingModalOpen(true)} />
+        <UltraPulseSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <HowItWorksSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <TeamSection onBookingClick={() => setIsBookingModalOpen(true)} />
         <WhyChooseUsSection onBookingClick={() => setIsBookingModalOpen(true)} />
