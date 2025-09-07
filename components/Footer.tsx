@@ -7,7 +7,7 @@ export default function Footer() {
             <img 
               src="/images/new-logo-2-scaled-e1746157317110-1024x762.png" 
               alt="Aesthetics with Linde DermaLab" 
-              className="h-12 mb-4"
+              className="h-12 mb-4 brightness-0 invert"
             />
             <p className="text-gray-400">
               State-of-the-art CO2 laser treatments in Marylebone, London
