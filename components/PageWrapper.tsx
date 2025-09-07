@@ -13,6 +13,7 @@ import UltraPulseSection from '@/components/UltraPulseSection'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import ProcessWidget from '@/components/ProcessWidget'
 import Observ520Section from '@/components/Observ520Section'
+import ReviewCarousel from '@/components/ReviewCarousel'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
@@ -37,6 +38,7 @@ export default function PageWrapper() {
         <PremiumTreatments onBookingClick={() => setIsBookingModalOpen(true)} />
         <ProcessWidget onBookingClick={() => setIsBookingModalOpen(true)} />
         <BeforeAfterSlider onBookingClick={() => setIsBookingModalOpen(true)} />
+        <ReviewCarousel onBookingClick={() => setIsBookingModalOpen(true)} />
         <FAQ onBookingClick={() => setIsBookingModalOpen(true)} />
         <CTASection onBookingClick={() => setIsBookingModalOpen(true)} />
       </main>
