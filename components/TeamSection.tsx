@@ -16,9 +16,9 @@ export default function TeamSection({ onBookingClick }: TeamSectionProps) {
         </p>
       </div>
 
-      {/* Full-width team member */}
-      <div className="w-full">
-        <div className="bg-white overflow-hidden shadow-lg sm:shadow-premium hover:shadow-premium-lg transition-all duration-300">
+      {/* Team member card with container */}
+      <div className="max-w-7xl mx-auto section-padding">
+        <div className="bg-white overflow-hidden shadow-lg sm:shadow-premium hover:shadow-premium-lg transition-all duration-300 rounded-2xl sm:rounded-3xl">
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Image Section - Full Width */}
             <div className="aspect-[4/3] lg:aspect-auto relative">
