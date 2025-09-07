@@ -141,7 +141,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className="overflow-x-hidden">
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/images/new-logo-2-scaled-e1746157317110-1024x762.png" />
@@ -151,7 +151,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         {children}
         {/* Instagram Embed Script */}
         <script async src="//www.instagram.com/embed.js"></script>

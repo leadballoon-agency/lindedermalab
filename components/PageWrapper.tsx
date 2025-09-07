@@ -26,7 +26,7 @@ export default function PageWrapper() {
   return (
     <>
       <Navigation onBookingClick={() => setIsBookingModalOpen(true)} />
-      <main className="overflow-hidden">
+      <main className="overflow-x-hidden">
         <PremiumHero onBookingClick={() => setIsBookingModalOpen(true)} />
         <AssessmentTool 
           onBookingClick={() => setIsBookingModalOpen(true)} 

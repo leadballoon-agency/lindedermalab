@@ -105,27 +105,26 @@ export default function ProcessWidget({ onBookingClick }: ProcessWidgetProps) {
   }
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-primary-50 to-white">
+    <section className="py-10 sm:py-12 md:py-16 bg-gradient-to-b from-white via-primary-50/30 to-white">
       <div className="max-w-7xl mx-auto section-padding">
         {/* Header */}
-        <div className="text-center mb-12">
-          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">
+        <div className="text-center mb-8">
+          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs">
             Treatment Journey
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-2 sm:mt-4">
-            Your Path to
-            <span className="block gradient-text">Perfect Skin</span>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mt-2">
+            Your 6-Step Journey
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mt-2 sm:mt-4 max-w-2xl mx-auto">
-            Click through each step to understand your treatment journey
+          <p className="text-sm text-neutral-600 mt-2 max-w-xl mx-auto">
+            From consultation to transformation
           </p>
         </div>
 
-        {/* Main Widget Container */}
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            {/* Progress Bar */}
-            <div className="bg-gray-50 p-6 border-b">
+        {/* Main Widget Container - More Compact */}
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            {/* Progress Bar - Slimmer */}
+            <div className="bg-gray-50 p-4 border-b">
               <div className="flex items-center justify-between mb-4">
                 {steps.map((step, index) => (
                   <button
@@ -135,7 +134,7 @@ export default function ProcessWidget({ onBookingClick }: ProcessWidgetProps) {
                   >
                     <div className="flex items-center">
                       <div className={`
-                        w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all
+                        w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold transition-all
                         ${index === activeStep 
                           ? 'bg-primary-600 text-white scale-110 shadow-lg' 
                           : index < activeStep 
@@ -163,8 +162,8 @@ export default function ProcessWidget({ onBookingClick }: ProcessWidgetProps) {
               </div>
             </div>
 
-            {/* Content Area */}
-            <div className="grid lg:grid-cols-2 min-h-[500px]">
+            {/* Content Area - Reduced Height */}
+            <div className="grid lg:grid-cols-2 min-h-[350px] sm:min-h-[400px]">
               {/* Image Side */}
               <div className="relative bg-gradient-to-br from-primary-100 to-primary-50 order-2 lg:order-1">
                 <img
@@ -173,24 +172,24 @@ export default function ProcessWidget({ onBookingClick }: ProcessWidgetProps) {
                   className="w-full h-full object-cover opacity-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <div className="text-5xl mb-3">{steps[activeStep].icon}</div>
-                  <div className="text-sm font-medium bg-white/20 backdrop-blur inline-block px-3 py-1 rounded-full">
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <div className="text-3xl sm:text-4xl mb-2">{steps[activeStep].icon}</div>
+                  <div className="text-xs sm:text-sm font-medium bg-white/20 backdrop-blur inline-block px-2 sm:px-3 py-1 rounded-full">
                     {steps[activeStep].duration}
                   </div>
                 </div>
               </div>
 
-              {/* Content Side */}
-              <div className="p-8 sm:p-12 flex flex-col order-1 lg:order-2">
+              {/* Content Side - More Compact Padding */}
+              <div className="p-6 sm:p-8 flex flex-col order-1 lg:order-2">
                 <div className="flex-1">
                   <div className="text-primary-600 font-bold text-sm mb-2">
                     STEP {steps[activeStep].number}
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-bold mb-4">
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3">
                     {steps[activeStep].title}
                   </h3>
-                  <p className="text-lg text-gray-600 mb-8">
+                  <p className="text-base text-gray-600 mb-6">
                     {steps[activeStep].description}
                   </p>
 
@@ -248,39 +247,41 @@ export default function ProcessWidget({ onBookingClick }: ProcessWidgetProps) {
               </div>
             </div>
 
-            {/* Bottom CTA Bar */}
-            <div className="bg-gradient-to-r from-primary-500 to-primary-600 p-6 text-white text-center">
-              <p className="mb-3 text-lg">Ready to start your journey?</p>
-              <button
-                onClick={onBookingClick}
-                className="inline-flex items-center bg-white text-primary-600 px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
-              >
-                Book Consultation (£50 Redeemable)
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </button>
+            {/* Bottom CTA Bar - Slimmer */}
+            <div className="bg-gradient-to-r from-primary-500 to-primary-600 p-4 text-white text-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <p className="text-base">Ready to start your journey?</p>
+                <button
+                  onClick={onBookingClick}
+                  className="inline-flex items-center bg-white text-primary-600 px-5 py-2.5 rounded-full font-medium text-sm hover:shadow-lg transition-all duration-300 hover:scale-105"
+                >
+                  Book Consultation (£50 Redeemable)
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Quick Stats */}
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        {/* Quick Stats - More Compact */}
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           <div>
-            <div className="text-3xl font-bold text-primary-600">30min</div>
-            <div className="text-sm text-gray-600">Consultation</div>
+            <div className="text-2xl font-bold text-primary-600">30min</div>
+            <div className="text-xs text-gray-600">Consultation</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary-600">5-7</div>
-            <div className="text-sm text-gray-600">Days Recovery</div>
+            <div className="text-2xl font-bold text-primary-600">5-7</div>
+            <div className="text-xs text-gray-600">Days Recovery</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary-600">98%</div>
-            <div className="text-sm text-gray-600">Satisfaction</div>
+            <div className="text-2xl font-bold text-primary-600">98%</div>
+            <div className="text-xs text-gray-600">Satisfaction</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary-600">3-6mo</div>
-            <div className="text-sm text-gray-600">Full Results</div>
+            <div className="text-2xl font-bold text-primary-600">3-6mo</div>
+            <div className="text-xs text-gray-600">Full Results</div>
           </div>
         </div>
       </div>
