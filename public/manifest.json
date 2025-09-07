@@ -1,0 +1,21 @@
+{
+  "name": "CO2 Laser London - Linde DermaLab",
+  "short_name": "CO2 London",
+  "description": "Expert CO2 laser skin resurfacing treatments in Marylebone, London",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C9302C",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/new-logo-2-scaled-e1746157317110-1024x762.png",
+      "sizes": "1024x762",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "beauty"],
+  "lang": "en-GB",
+  "dir": "ltr"
+}
