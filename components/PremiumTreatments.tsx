@@ -5,6 +5,15 @@ interface PremiumTreatmentsProps {
 export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsProps) {
   const treatments = [
     {
+      icon: '✨',
+      title: 'Eye Area Treatment',
+      description: "Target crow's feet and under-eye concerns",
+      features: ['Focused eye treatment', '3-5 days downtime', '30-45 minutes', 'Visible results'],
+      price: '£150',
+      gradient: 'from-blue-400 to-cyan-600',
+      popular: false
+    },
+    {
       icon: '🔬',
       title: 'Full Face Treatment',
       description: 'Complete facial rejuvenation',
@@ -38,7 +47,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {treatments.map((treatment, index) => (
             <div 
               key={index} 
