@@ -5,22 +5,22 @@ interface TeamSectionProps {
 export default function TeamSection({ onBookingClick }: TeamSectionProps) {
   return (
     <section id="team" className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-white to-primary-50">
-      <div className="max-w-7xl mx-auto section-padding">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Our Team</span>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-2 sm:mt-4">
-            Meet Your
-            <span className="block gradient-text">Treatment Team</span>
-          </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mt-2 sm:mt-4 max-w-2xl mx-auto px-4">
-            Expert care from Tatiana and the entire Linde DermaLab team
-          </p>
-        </div>
+      <div className="text-center mb-8 sm:mb-12 lg:mb-16 max-w-7xl mx-auto section-padding">
+        <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Our Team</span>
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-2 sm:mt-4">
+          Meet Your
+          <span className="block gradient-text">Treatment Team</span>
+        </h2>
+        <p className="text-sm sm:text-base lg:text-lg text-neutral-600 mt-2 sm:mt-4 max-w-2xl mx-auto px-4">
+          Expert care from Tatiana and the entire Linde DermaLab team
+        </p>
+      </div>
 
-        {/* Single full-width team member */}
-        <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg sm:shadow-premium hover:shadow-premium-lg transition-all duration-300">
+      {/* Full-width team member */}
+      <div className="w-full">
+        <div className="bg-white overflow-hidden shadow-lg sm:shadow-premium hover:shadow-premium-lg transition-all duration-300">
           <div className="grid lg:grid-cols-2 gap-0">
-            {/* Image Section */}
+            {/* Image Section - Full Width */}
             <div className="aspect-[4/3] lg:aspect-auto relative">
               <img 
                 src="/images/team4.jpg" 
@@ -82,9 +82,11 @@ export default function TeamSection({ onBookingClick }: TeamSectionProps) {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Trust Indicators */}
-        <div className="mt-12 sm:mt-16 bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg sm:shadow-premium">
+      {/* Trust Indicators */}
+      <div className="max-w-7xl mx-auto section-padding mt-12 sm:mt-16">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg sm:shadow-premium">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div>
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
