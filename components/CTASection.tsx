@@ -31,8 +31,8 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
           <div className="bg-white/10 backdrop-blur rounded-xl sm:rounded-2xl p-4 sm:p-6">
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📞</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Call Us</h3>
-            <a href="tel:+447436484802" className="text-white/90 hover:text-white text-sm sm:text-base">
-              +44 7436 484802
+            <a href="tel:+447414245007" className="text-white/90 hover:text-white text-sm sm:text-base">
+              +44 7414 245007
             </a>
           </div>
           
@@ -57,7 +57,7 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
           onClick={onBookingClick}
           className="inline-flex items-center justify-center bg-white text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
         >
-          Book Your Free Consultation
+          Book Your Consultation (£50 Redeemable)
           <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>

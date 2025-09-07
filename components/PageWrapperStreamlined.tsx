@@ -4,21 +4,17 @@ import { useState } from 'react'
 import Navigation from '@/components/Navigation'
 import PremiumHero from '@/components/PremiumHero'
 import AssessmentTool from '@/components/AssessmentTool'
-// AboutSection removed - replaced with Observ520Section
+import UltraPulseSection from '@/components/UltraPulseSection'  // Combines both technologies
 import TeamSection from '@/components/TeamSection'
 import PremiumTreatments from '@/components/PremiumTreatments'
-import HowItWorksSection from '@/components/HowItWorksSection'
-import WhyChooseUsSection from '@/components/WhyChooseUsSection'
-import UltraPulseSection from '@/components/UltraPulseSection'
-import BeforeAfterSlider from '@/components/BeforeAfterSlider'
-import ProcessWidget from '@/components/ProcessWidget'
-import Observ520Section from '@/components/Observ520Section'
+import ProcessSection from '@/components/ProcessSection'  // Keep process, remove HowItWorks
+import BeforeAfterGallery from '@/components/BeforeAfterGallery'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
 import BookingModal from '@/components/BookingModal'
 
-export default function PageWrapper() {
+export default function PageWrapperStreamlined() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   const [assessmentData, setAssessmentData] = useState<any>(null)
 
@@ -26,17 +22,25 @@ export default function PageWrapper() {
     <>
       <Navigation onBookingClick={() => setIsBookingModalOpen(true)} />
       <main className="overflow-hidden">
+        {/* Hero & Assessment - Keep for engagement */}
         <PremiumHero onBookingClick={() => setIsBookingModalOpen(true)} />
         <AssessmentTool 
           onBookingClick={() => setIsBookingModalOpen(true)} 
           onAssessmentComplete={(data) => setAssessmentData(data)}
         />
-        <Observ520Section onBookingClick={() => setIsBookingModalOpen(true)} />
+        
+        {/* Technology - Combined section */}
         <UltraPulseSection onBookingClick={() => setIsBookingModalOpen(true)} />
-        <TeamSection onBookingClick={() => setIsBookingModalOpen(true)} />
+        
+        {/* Treatments & Process */}
         <PremiumTreatments onBookingClick={() => setIsBookingModalOpen(true)} />
-        <ProcessWidget onBookingClick={() => setIsBookingModalOpen(true)} />
-        <BeforeAfterSlider onBookingClick={() => setIsBookingModalOpen(true)} />
+        <ProcessSection onBookingClick={() => setIsBookingModalOpen(true)} />
+        
+        {/* Results & Credibility */}
+        <BeforeAfterGallery onBookingClick={() => setIsBookingModalOpen(true)} />
+        <TeamSection onBookingClick={() => setIsBookingModalOpen(true)} />
+        
+        {/* FAQ & Final CTA */}
         <FAQ onBookingClick={() => setIsBookingModalOpen(true)} />
         <CTASection onBookingClick={() => setIsBookingModalOpen(true)} />
       </main>
